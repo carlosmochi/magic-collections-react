@@ -9,12 +9,17 @@ function Navbar(){
             <ul className={styles.list}>
                 <li className={styles.item}>
                     <button>
-                        <Link className={styles.link} to="/deck">DECKS</Link>
+                        <Link className={styles.link} to="/">Home</Link>
                     </button>
                 </li>
                 <li className={styles.item}>
                     <button>
-                        <Link className={styles.link} to="/collection">COLLECTION</Link>
+                        <Link className={styles.link} to="/deck">Decks</Link>
+                    </button>
+                </li>
+                <li className={styles.item}>
+                    <button>
+                        <Link className={styles.link} to="/collection">Collection</Link>
                     </button>
                 </li>
                 <li className={styles.item}>
