@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { GiCardPlay } from 'react-icons/gi'
 import styles from './Card.module.css'
 
-function Card(){
+function Card({cardImage}){
     const [showCard, setShowCard] = useState(true)
     let cardName = "Elesh Norn, Grand Cenobite"
     let cardCost = "4WW";
@@ -17,7 +17,7 @@ function Card(){
         <div className={styles.card}>
                     {showCard == true 
                         ?<a onClick={click} href='#'>
-                            <img className={styles.card_image} src='https://cards.scryfall.io/large/front/7/8/78c2bfef-06a5-4c7f-8283-ea3fb673b7a1.jpg?1562850573' />
+                            <img className={styles.card_image} src={cardImage} />
                         </a>
                         :
                         <div className={styles.card_actions}>

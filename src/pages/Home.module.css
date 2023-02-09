@@ -10,8 +10,8 @@
     display: grid;
     column-gap: 3px;
     row-gap: 3px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     color:black;
