@@ -12,7 +12,7 @@ function App() {
       <Navbar/>
       <Container customClass="main_component">
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>w
         </Routes>
       </Container>
       <Footer/>

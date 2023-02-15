@@ -2,13 +2,8 @@ import { useState } from 'react'
 import { GiCardPlay } from 'react-icons/gi'
 import styles from './Card.module.css'
 
-function Card({cardImage}){
+function Card({cardImage, cardName, cardCost, cardTypes, oracleText}){
     const [showCard, setShowCard] = useState(true)
-    let cardName = "Elesh Norn, Grand Cenobite"
-    let cardCost = "4WW";
-    let cardTypes = "Creature - Phyrexian Preator"
-    let oracleText = "Vigilance Other creatures you control get +2/+2 Creatures your oponents control get -2/-2"
-
     function click(e){
         e.preventDefault()
         setShowCard(!showCard)

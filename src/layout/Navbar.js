@@ -12,7 +12,7 @@ function Navbar(){
                         <Link className={styles.link} to="/">Home</Link>
                     </button>
                 </li>
-                <li className={styles.item}>
+                {/* <li className={styles.item}>
                     <button>
                         <Link className={styles.link} to="/deck">Decks</Link>
                     </button>
@@ -21,7 +21,7 @@ function Navbar(){
                     <button>
                         <Link className={styles.link} to="/collection">Collection</Link>
                     </button>
-                </li>
+                </li> */}
                 <li className={styles.item}>
                     <button>
                         <Link className={styles.link} to="/contact">Contact us</Link>

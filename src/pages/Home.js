@@ -18,6 +18,7 @@ function Home(){
         .then((data) => {
             setCardData(data.data)
             setIsLoading(false)
+            console.log(data)
         })
         .catch((err) => console.log(err))
     }, [])
@@ -29,7 +30,7 @@ function Home(){
                 {isLoading 
                 ?console.log("vazio")
                 :( cardData.map((card) => (
-                    <Card key={card.id} cardImage={card.image_uris.large}/>
+                    <Card key={card.id} cardImage={card.image_uris.large} cardCost={card.mana_cost} cardName={card.name} cardTypes={card.type_line} oracleText={card.oracle_text}/>
                 )))}
             </div>
         </div>
