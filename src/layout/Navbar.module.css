@@ -45,6 +45,7 @@
 
 .link{
     text-decoration: none;
+    margin: 0 auto;    
     font-size: bold;
     font-size: 15px;
     color: white;
